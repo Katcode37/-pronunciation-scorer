@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pronunciation Scorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1>Pronunciation Scorer</h1>
+
+    <select id="textSelect">
+
+
+  <option value="My brother works in a small supermarket.">
+    A1 — My brother works in a small supermarket.
+  </option>
+
+  <option value="I usually travel by train because it is cheaper.">
+    A2 — I usually travel by train because it is cheaper.
+  </option>
+
+  <option value="Yesterday we watched a film about wild animals.">
+    A2 — Yesterday we watched a film about wild animals.
+  </option>
+
+  <option value="The weather is getting warmer, although it still rains quite often.">
+    B1 — The weather is getting warmer...
+  </option>
+
+  <option value="I would rather stay at home than drive through heavy traffic.">
+    B1 — I would rather stay at home...
+  </option>
+
+  <option value="The speaker emphasized environmental awareness.">
+    B2 — The speaker emphasized environmental awareness.
+    </option>
+
+  <option value="The author thoroughly explained the theory.">
+    B2 — The author thoroughly explained the theory.
+  </option>
+
+    <option value="They thought the weather throughout the month was unbearable.">
+    C1 — They thought the weather throughout the month was unbearable.
+    </option>
+
+    <option value="Betty bought better butter, but the butter was bitter.">
+        C2 — Betty bought better butter, but the butter was bitter.
+    </option>
+
+    </select>
+
+    <p id="textToRead">
+      Hello, my name is Anna. I live in Spain.
+    </p>
+
+    <button id="startBtn">Start recording</button>
+    <button id="stopBtn" disabled>Stop recording</button>
+    <button id="sendBtn" disabled>Send audio</button>
+
+    <p id="status">Not recording</p>
+
+    <div id="result"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

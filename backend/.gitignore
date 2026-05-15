@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+dataset/audio/
+dataset/embeddings.pt
+dataset/word_embeddings_subset.pt
