@@ -53,7 +53,7 @@ def score_word_embeddings(word_embeddings, word_texts, top_k=3):
 
     weak_words = [
         item for item in word_results
-        if item["score"] < 9
+        if item["score"] < 9.5
     ]
     return weak_words[:top_k]
 
