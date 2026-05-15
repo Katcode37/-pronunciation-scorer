@@ -6,9 +6,9 @@ from uuid import uuid4
 from preprocess import preprocess_audio
 from model import predict_score
 from stt import transcribe_audio, compare_with_expected
-from mfa_runner import run_mfa_alignment
-from alignment import extract_word_audio_segments
-from word_model import predict_weakest_words
+#from mfa_runner import run_mfa_alignment
+#from alignment import extract_word_audio_segments
+#from word_model import predict_weakest_words
 
 app = Flask(__name__)
 CORS(app)
@@ -69,23 +69,25 @@ def score_audio():
 
     print("Running MFA...")
 
-    word_intervals = run_mfa_alignment(
-        processed_audio,
-        sample_rate,
-        expected_text,
-        unique_filename.replace(".", "_")
-    )
+    #word_intervals = run_mfa_alignment(
+    #    processed_audio,
+    #    sample_rate,
+    #    expected_text,
+    #    unique_filename.replace(".", "_")
+    #)
 
-    word_segments = extract_word_audio_segments(
-        processed_audio,
-        sample_rate,
-        word_intervals
-    )
+    #word_segments = extract_word_audio_segments(
+    #    processed_audio,
+    #    sample_rate,
+    #    word_intervals
+    #)
 
-    weakest_words = predict_weakest_words(
-        word_segments,
-        top_k=3
-    )
+    #weakest_words = predict_weakest_words(
+    #    word_segments,
+    #    top_k=3
+    #)
+
+    weakest_words = []
 
     print("Weakest words:", weakest_words)
 
