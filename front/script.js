@@ -95,7 +95,7 @@ sendBtn.addEventListener("click", async () => {
     }, 6000);
   }, 5000);
 
-  const response = await fetch("http://108.129.176.61:5001/score", {
+  const response = await fetch("https://hunter-remover-struck.ngrok-free.dev/score", {
     method: "POST",
     body: formData
   });
